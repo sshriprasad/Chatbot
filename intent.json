@@ -1,0 +1,248 @@
+[
+  {
+    "intent": "greeting",
+    "patterns": [
+      "Hi", "Hello", "Hey", "Good morning", "Good evening", "Is anyone there?",
+      "Hey there", "Hi there", "Hello assistant", "Hi bot", "Greetings",
+      "What's up?", "Yo", "Hi team", "Hey assistant"
+    ],
+    "responses": [
+      "Hello! How can I help you today?",
+      "Hi there! What would you like to know?",
+      "Hey! I'm here to assist you.",
+      "Welcome! Feel free to ask me anything.",
+      "Greetings! How may I support you today?",
+      "Hello! I can help you with expert listings or any info you need."
+    ]
+  },
+  {
+    "intent": "goodbye",
+    "patterns": [
+      "Bye", "Goodbye", "See you", "Talk to you later", "Catch you later",
+      "Farewell", "See ya", "Later", "I'm leaving", "Signing off"
+    ],
+    "responses": [
+      "Goodbye! Let me know if you need anything else.",
+      "See you later! Have a great day.",
+      "Bye! I'm here if you need more help.",
+      "Take care! I'm always here if you need assistance."
+    ]
+  },
+  {
+    "intent": "thanks",
+    "patterns": [
+      "Thanks", "Thank you", "Much appreciated", "Thanks a lot", "Thanks for your help",
+      "Thanks buddy", "Thank you so much", "Thanks assistant"
+    ],
+    "responses": [
+      "You're welcome!",
+      "Happy to help!",
+      "Anytime! Let me know if you need anything else.",
+      "No problem. I'm here for you."
+    ]
+  },
+  {
+    "intent": "help_request",
+    "patterns": [
+      "I need help", "Can you help me?", "Support please", "Need assistance",
+      "Please assist", "I have a problem", "Help me out"
+    ],
+    "responses": [
+      "Sure, I'm here to help! What do you need?",
+      "Of course! Just let me know what you're looking for.",
+      "Absolutely! What can I assist you with today?"
+    ]
+  },
+  {
+    "intent": "features",
+    "patterns": [
+      "What can you do?", "List your services", "Features?", "What are your capabilities?",
+      "How can you help?", "Services available?"
+    ],
+    "responses": [
+      "I can help you with expert listings, directory queries, and general info. What would you like to do?",
+      "Here are some things I can assist with: expert counts, city listings, and FAQs.",
+      "I'm here to provide expert info and support with directory questions."
+    ]
+  },
+  {
+    "intent": "order_status",
+    "patterns": [
+      "Where is my order?", "Track my order", "Order status", "Order update",
+      "Check my shipment", "Track package"
+    ],
+    "responses": [
+      "Please provide your order number so I can check the status.",
+      "Sure! Can you share your order ID?",
+      "I'd be happy to help. What's your order number?"
+    ]
+  },
+  {
+    "intent": "cancel_order",
+    "patterns": [
+      "Cancel my order", "I want to cancel", "Stop my order", "Abort order",
+      "Can I cancel my order?"
+    ],
+    "responses": [
+      "I can help with that. Could you provide your order number?",
+      "No problem, let's cancel it. Please share the order ID.",
+      "Order cancellation requested. May I have your order details?"
+    ]
+  },
+  {
+    "intent": "booking",
+    "patterns": [
+      "Book a table", "Make a reservation", "Schedule appointment",
+      "Set an appointment", "Reserve a slot"
+    ],
+    "responses": [
+      "Sure, I can help with that. What's the date and time?",
+      "Let’s get your booking done. Can you provide the details?",
+      "Booking made easy! Please share your preferred schedule."
+    ]
+  },
+  {
+    "intent": "opening_hours",
+    "patterns": [
+      "What are your hours?", "Business hours?", "When are you open?",
+      "Working times?", "Opening and closing time?"
+    ],
+    "responses": [
+      "We are open from 9 AM to 6 PM, Monday to Saturday.",
+      "Our hours are 9 AM to 6 PM on weekdays.",
+      "You can reach us between 9 AM and 6 PM, Mon–Sat."
+    ]
+  },
+  {
+    "intent": "location",
+    "patterns": [
+      "Where are you located?", "Your address?", "Location?", "How can I reach you?",
+      "Where can I find you?"
+    ],
+    "responses": [
+      "We are located at 123 Main Street, Jaunpur.",
+      "Our address is 123 Main Street. Would you like directions?",
+      "You can find us at the center of Jaunpur city, near the market area."
+    ]
+  },
+  {
+    "intent": "refund",
+    "patterns": [
+      "I want a refund", "Refund process", "How to get refund?",
+      "Give my money back", "Can I get a refund?"
+    ],
+    "responses": [
+      "I'm sorry to hear that. Please share your order number so I can help.",
+      "Let’s get that sorted. May I have your order ID?",
+      "Sure, I’ll start the refund process for you. Can you give me the details?"
+    ]
+  },
+  {
+    "intent": "product_info",
+    "patterns": [
+      "Tell me about [product]", "What does this do?", "How does it work?",
+      "Product description", "Details about this item"
+    ],
+    "responses": [
+      "This product is designed to [function]. Would you like a full specification?",
+      "It works by [brief explanation]. Need more details?",
+      "Sure! Here's how it works: [summary]."
+    ]
+  },
+  {
+    "intent": "pricing",
+    "patterns": [
+      "How much does it cost?", "Pricing?", "What's the price?",
+      "Cost of this?", "Price list?"
+    ],
+    "responses": [
+      "Prices start at $49. Would you like a detailed quote?",
+      "The base price is $49. Want to see plans?",
+      "It depends on your needs. I can help you with a custom quote."
+    ]
+  },
+  {
+    "intent": "tech_support",
+    "patterns": [
+      "I'm having an issue", "It’s not working", "Problem with this", 
+      "Troubleshooting help", "Need tech support"
+    ],
+    "responses": [
+      "Let’s fix this. Can you describe the issue?",
+      "I’m here to help. What’s the problem exactly?",
+      "Sorry to hear that! Tell me more about the issue."
+    ]
+  },
+  {
+    "intent": "change_account",
+    "patterns": [
+      "Change my email", "Update my info", "Change password",
+      "Edit my profile", "Modify account details"
+    ],
+    "responses": [
+      "Sure, I’ll guide you through it. What would you like to update?",
+      "Let’s update your account. What do you need to change?",
+      "I can help with that. Just tell me what needs to be changed."
+    ]
+  },
+  {
+    "intent": "reset_password",
+    "patterns": [
+      "Forgot password", "Reset my password", "Password help",
+      "Can't login", "Help with login"
+    ],
+    "responses": [
+      "I’ve sent a reset link to your email.",
+      "Password reset initiated. Check your inbox!",
+      "Click the link in your email to reset your password."
+    ]
+  },
+  {
+    "intent": "feedback",
+    "patterns": [
+      "I have feedback", "Want to leave a review", "I’d like to share something",
+      "Feedback for you", "Can I give feedback?"
+    ],
+    "responses": [
+      "Sure, I’d love to hear your feedback!",
+      "Please go ahead — your input helps us improve.",
+      "I’m listening. What would you like to share?"
+    ]
+  },
+  {
+    "intent": "complaint",
+    "patterns": [
+      "I’m not happy", "Bad experience", "Complaint", "I want to complain",
+      "Not satisfied"
+    ],
+    "responses": [
+      "I'm really sorry to hear that. What happened?",
+      "Let’s fix this. Please tell me what went wrong.",
+      "I understand your concern. I’m here to help resolve it."
+    ]
+  },
+  {
+    "intent": "faq",
+    "patterns": [
+      "Do you offer returns?", "Is delivery free?", "Can I change my order?",
+      "Do you have a refund policy?", "How long is delivery?"
+    ],
+    "responses": [
+      "Yes, we offer returns within 7 days of delivery.",
+      "Delivery is free on orders over $50.",
+      "You can change your order within 24 hours of placing it."
+    ]
+  },
+  {
+    "intent": "small_talk",
+    "patterns": [
+      "How are you?", "Tell me a joke", "What’s up?", "Say something funny",
+      "Are you human?"
+    ],
+    "responses": [
+      "I'm just a bot, but I'm doing great! Want to hear a fun fact?",
+      "Here's a joke: Why don’t robots ever panic? Because they have nerves of steel!",
+      "I’m functioning at full capacity. How can I help you today?"
+    ]
+  }
+]

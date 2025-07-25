@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chatbot</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    .chat-container {
+      max-width: 600px;
+      margin: 50px auto;
+      background: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .chat-box {
+      height: 400px;
+      overflow-y: auto;
+      border: 1px solid #ccc;
+      padding: 10px;
+      background: #fafafa;
+      margin-bottom: 20px;
+      border-radius: 4px;
+    }
+
+    .chat-message {
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 5px;
+      max-width: 80%;
+      line-height: 1.4;
+    }
+
+    .user-message {
+      background-color: #cce5ff;
+      text-align: right;
+      margin-left: auto;
+    }
+
+    .bot-message {
+      background-color: #e2e3e5;
+      text-align: left;
+      margin-right: auto;
+    }
+
+    form {
+      display: flex;
+      gap: 10px;
+    }
+
+    input[type="text"] {
+      flex: 1;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      padding: 10px 15px;
+      background-color: #007bff;
+      border: none;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .clear-button {
+      background-color: #dc3545;
+    }
+
+    .clear-button:hover {
+      background-color: #a71d2a;
+    }
+  </style>
+</head>
+<body>
+  <div class="chat-container">
+    <h2>Chat with Bot</h2>
+    <div class="chat-box" id="chat-box">
+      {% for message in chat_history %}
+        <div class="chat-message {{ 'user-message' if message.role == 'user' else 'bot-message' }}">
+          {{ message.text }}
+        </div>
+      {% endfor %}
+    </div>
+    <form method="post">
+      <input type="text" name="query" placeholder="Type your message..." autofocus required>
+      <button type="submit">Send</button>
+    </form>
+    <form method="post" action="/clear_chat" style="margin-top: 10px;">
+      <button type="submit" class="clear-button">Clear Chat</button>
+    </form>
+  </div>
+</body>
+</html>
